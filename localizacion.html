@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- ICONS BOOSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+  <!-- TITLE -->
+  <title>EL Rey Del HotDog</title>
+</head>
+
+<body>
+  <main>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/Logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                COMIDA
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="comida.html">PERRO</a></li>
+                <li><a class="dropdown-item" href="comida.html">HAMBURGUESA</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">HACER PEDIDO</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contactos.html">CONTACTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="recompensas.html">RECOMPENSAS</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button type="button" class="btn btn-light" id="btn-location">
+              <a href="localizacion.html">Localizanos</a>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- SECTION -->
+    <article class="article-location">
+      <iframe class="article-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.2280076275216!2d-74.17407917087014!3d4.609766399790708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e60635b7ee9%3A0xc8671a2dd3578ce2!2sCl.%2057a%20Sur%20%2378k-40%20a%2078k-56%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1658109887011!5m2!1ses-419!2sco"
+        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <section class="article-login">
+        <h2>Login</h2>
+        <form class="form">
+          <div class="form-section">
+            <input class="form-input" placeholder="Nombre" type="text" required>
+          </div>
+          <div class="form-section">
+            <input class="form-input" placeholder="E-Mail" type="email" required>
+          </div>
+          <div class="form-section">
+            <input class="form-input" placeholder="Password" type="password" required>
+          </div>
+          <div class="form-section">
+            <textarea class="form-input" placeholder="Text" type="text" required></textarea>
+          </div>
+          <div class="form-section form-link">
+            No se encuentra registrado? <a href="">Registrate</a>
+          </div>
+          <div class="form-section section-registrar">
+            <input class="form-input btn-registrar" type="submit" value="Login">
+          </div>
+        </form>
+      </section>
+    </article>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <ul class="footer-list">
+          <h6 class="footer-list_titulo">NECESITAS AYUDA?</h6>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+        </ul>
+        <ul class="footer-list">
+          <h6 class="footer-list_titulo">Lorem, ipsum.</h6>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+        </ul>
+        <ul class="footer-list">
+          <h6 class="footer-list_titulo">Lorem, ipsum.</h6>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+        </ul>
+        <ul class="footer-list footer-icons">
+          <li class="bi bi-facebook"></li>
+          <li class="bi bi-twitter"></li>
+          <li class="bi bi-youtube"></li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

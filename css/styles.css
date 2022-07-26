@@ -1,0 +1,438 @@
+* {
+    font-family: 'Mukta', sans-serif;
+    /* border: 1px solid black; */
+}
+
+:root {
+    --color-red: #9B1B39;
+    --color-white: #fff;
+    --color-green: #2A737A;
+    --color-yellow: #FABA67;
+    --color-grey: #555555;
+    --color-black: #000;
+    --color-hover-red: #AA1B39;
+}
+
+/* NAVBAR */
+.navbar {
+    background: url(../img/nav-background..webp);
+    height: 5em;
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-white);
+    border: transparent;
+    transition: all 0.8s;
+}
+
+.navbar-nav .nav-link:hover {
+    border-bottom: 1px solid var(--color-white);
+}
+
+.navbar-nav .nav-link:active {
+    border-bottom: 1px solid var(--color-white);
+}
+
+#btn-location {
+    border-radius: 0;
+}
+
+#btn-location:hover {
+    background: rgb(216, 216, 216);
+    border: none;
+}
+
+#btn-location a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.navbar-toggler-icon {
+    color: var(--color-white);
+}
+
+.navbar-toggler {
+    background: url(../img/nav-background..webp);
+    color: var(--color-white);
+}
+
+.collapse {
+    background: url(../img/nav-background..webp);
+    padding-bottom: 10px;
+    z-index: 10;
+}
+
+.collapse li,
+button {
+    margin-left: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--color-grey);
+    height: 20em;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5%;
+}
+
+.footer-list_titulo {
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+}
+
+.footer-list {
+    font-size: 12px;
+    color: var(--color-white);
+    list-style: none;
+    margin: 2em;
+    padding-left: 0px;
+    flex-grow: 1;
+}
+
+.footer-icons {
+    display: flex;
+    width: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-icons li {
+    font-size: 32px;
+    text-align: center;
+    height: 42px;
+}
+
+/* CAROUSEL */
+#carouselExampleControls {
+    margin: 2em;
+}
+
+.carousel-inner #carousel-principal {
+    background: url(../img/comidasRapidas.png) no-repeat right, url(https://img.lovepik.com/background/20211021/large/lovepik-e-commerce-promotion-background-image_401327963.jpg);
+    background-size: contain;
+}
+
+.carousel-inner #carousel-item1 {
+    background: url(../img/comidasRapidas.png) no-repeat right, url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-blue-background-promotion-carnival-print-ad-image_148937.jpg);
+    background-size: contain;
+}
+
+.carousel-inner #carousel-item2 {
+    background: url(../img/comidasRapidas.png) no-repeat right, url(https://img.lovepik.com/background/20211021/large/lovepik-e-commerce-abstract-background-image_401327633.jpg);
+    background-size: contain;
+}
+
+.carousel-content {
+    color: var(--color-white);
+    font-weight: 900;
+    text-shadow: 2px 2px 5px rgb(207, 129, 129);
+    margin-left: 10%;
+    margin-top: 2em;
+    max-width: 350px;
+}
+
+.carousel-control-prev {
+    margin: 0;
+}
+
+.carousel-control-prev:hover {
+    background: linear-gradient(to left, transparent, #333);
+    ;
+}
+
+.carousel-control-next:hover {
+    margin-left: 0;
+    background: linear-gradient(to right, transparent, #333);
+    ;
+}
+
+.carousel-item {
+    height: 25em;
+}
+
+.carousel-content button {
+    color: var(--color-white);
+    background: var(--color-red);
+    border: none;
+    padding: 10px;
+    margin: 0;
+    position: relative;
+    bottom: -10em;
+}
+
+.carousel-content button:hover {
+    background: var(--color-hover-red);
+}
+
+/* ARTICULOS */
+/* PRIMER ARTICULO */
+.section-articles {
+    display: flex;
+    margin: 2em
+}
+
+.article-orden {
+    background: var(--color-red);
+    flex: 1;
+    margin: 20px;
+    height: auto;
+    text-align: center;
+}
+.article-btn {
+    background: url(../img/hamburguesaVerde.jpg) no-repeat bottom;
+    background-size: cover;
+    width: 100%;
+    height: 18em;
+}
+.article-orden button {
+    border: none;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px;
+    color: var(--color-black);
+    background: var(--color-white);
+    position: relative;
+    bottom: -9em;
+}
+.article-orden h1 {
+    text-shadow: 2px 2px 5px rgb(207, 129, 129);
+    text-align: center;
+    color: var(--color-white);
+    margin: 20px;
+}
+
+/* COMIDAS */
+.section-comida {
+    display: flex;
+}
+
+/* MENU */
+.menu {
+    width: 400px;
+    margin: 20px 10%;
+    margin-right: 0;
+    flex: .6;
+}
+
+.menu-lista {
+    padding: 0;
+    position: sticky;
+    top: 10px;
+}
+
+.menu-lista__contenido {
+    font-weight: 400;
+    list-style-type: none;
+    border: .5px solid #bbb;
+    outline: none;
+    padding: 8px;
+}
+
+.menu-lista__contenido:hover {
+    cursor: pointer;
+    border-left: 4px solid var(--color-green);
+}
+
+.menu-btn {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    padding: 10px;
+}
+
+/* PERROS */
+.section-productos {
+    margin: 20px 10%;
+    margin-left: 5%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.producto-imagenes {
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+.producto-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s;
+}
+
+.producto:hover .producto-img {
+    cursor: pointer;
+    margin: -8px;
+    width: 110%;
+}
+
+.producto-nombre {
+    font-size: larger;
+    font-weight: 700;
+}
+
+.oferta__anterior {
+    text-decoration: line-through;
+}
+
+.oferta {
+    font-size: smaller;
+    font-weight: 500;
+    display: inline;
+}
+
+.producto-text {
+    font-size: 12px;
+}
+
+/* LOCATION */
+/* LOGIN */
+.article-location {
+    display: flex;
+}
+
+.article-map {
+    margin: 3%;
+    flex: 2;
+}
+
+.article-login {
+    flex: 1;
+    margin: 3%;
+}
+
+.article-login h2 {
+    text-align: center;
+}
+
+.form-input {
+    width: 96%;
+    margin: 2%;
+    border: none;
+    border-bottom: 3px solid var(--color-green);
+}
+
+.form-input:focus {
+    background: linear-gradient(to bottom, transparent, #eee);
+    outline: none;
+}
+
+.btn-registrar {
+    color: var(--color-white);
+    background: var(--color-green);
+    padding: 7px;
+    width: 40%;
+}
+
+.btn-registrar:hover {
+    background: #2A887A;
+}
+
+.section-registrar {
+    text-align: center;
+}
+
+.form-section>textarea {
+    min-height: 140px;
+    resize: none;
+}
+
+.form-link {
+    text-align: center;
+}
+
+.form-link a {
+    font-weight: 400;
+    color: var(--color-green);
+}
+
+/* RESPONSIVE DESING MOBILE */
+@media only screen and (max-width:600px) {
+
+    /* SECTION */
+    .section-articles {
+        flex-direction: column;
+        margin: 10px 5%;
+    }
+
+    .article-orden {
+        border: 1px solid black;
+        margin: 2px;
+        width: 100%;
+    }
+
+    .article-orden p {
+        font-size: 12px;
+    }
+
+    /* FOOTER */
+    .footer {
+        height: auto;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-icons {
+        display: flex;
+        width: 10px;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 4px solid blue;
+    }
+
+    /* SECTION COMIDA */
+    .section-comida {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* MENU SECTION COMIDA */
+    .menu {
+        width: auto;
+    }
+
+    /* PERROS */
+    .section-productos {
+        width: auto;
+        margin: 20px 3%;
+    }
+}
+
+/* RESPONSIVE DESING TABLET */
+@media (max-width: 900px) {
+
+    /* CAROUSEL */
+    #carouselExampleControls {
+        margin: 10%;
+    }
+
+    /* MENU */
+    .menu {
+        margin-left: 10%;
+    }
+
+    /* FOOTER */
+    .footer-list {
+        margin: .5em;
+    }
+
+    .footer-icons {
+        flex-direction: column;
+    }
+
+    /* ARTICLE-LOCATION */
+    .article-location {
+        flex-direction: column;
+    }
+
+    .article-map {
+        width: 100%;
+    }
+}
