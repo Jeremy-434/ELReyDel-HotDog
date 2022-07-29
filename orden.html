@@ -17,7 +17,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <!-- FAVICON -->
+  <!-- FONT TITAN ONE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <!-- FAVICON -->
   <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
   <!-- TITLE -->
   <title>EL Rey Del HotDog</title>
@@ -34,6 +38,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <h5>EL Rey Del HotDog</h5>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
@@ -53,41 +58,57 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="contactos.html">CONTACTOS</a>
+              <a class="nav-link" aria-current="page" href="orden.html">DOMICILIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="recompensas.html">RECOMPENSAS</a>
+              <a class="nav-link" aria-current="page" href="conocenos.html">CONOCENOS</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
             <button type="button" class="btn btn-light" id="btn-location">
-              <a href="localizacion.html">Localizanos</a>
+              <a href="login.html">Login</a>
+            </button>
+
+            <button type="button" class="btn btn-light " id="btn-location">
+              <a href="register.html">Register</a>
             </button>
           </form>
         </div>
       </div>
     </nav>
+    <!-- CONTENIDO -->
+    <!-- ARTICLE CONTACTO -->
+    <article class="article-contactos">
+      <section class="article-section__contactos">
+        <div class="article-contenido__direccion">
+          <h1>PIDE A DOMICILIO</h1>
+          <div class="article-inputDirrecion">
+            <input type="text" id="dirrecion" placeholder="Ingresa tu Dirreccion">
+            <input type="submit" value="Buscar">
+          </div>
+        </div>
+      </section>
+    </article>
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-content">
         <ul class="footer-list">
-          <h6 class="footer-list_titulo">NECESITAS AYUDA?</h6>
-          <li>Lorem, ipsum.</li>
-          <li>Lorem, ipsum.</li>
-          <li>Lorem, ipsum.</li>
-          <li>Lorem, ipsum.</li>
+          <h5 class="footer-list_titulo">NECESITAS AYUDA?</h5>
+          <li><a href="">Contactanos</a></li>
+          <li><a href="">Dejanos tu opinion</a></li>
+          <li><a href="">Localizanos</a></li>
+          <li><a href="">Conocenos</a></li>
         </ul>
         <ul class="footer-list">
-          <h6 class="footer-list_titulo">Lorem, ipsum.</h6>
-          <li>Lorem, ipsum.</li>
-          <li>Lorem, ipsum.</li>
+          <h5 class="footer-list_titulo">Numeros de Contacto</h5>
+          <li>3003379105</li>
+          <li>3138874001</li>
         </ul>
         <ul class="footer-list">
-          <h6 class="footer-list_titulo">Lorem, ipsum.</h6>
-          <li>Lorem, ipsum.</li>
-          <li>Lorem, ipsum.</li>
-          <li>Lorem, ipsum.</li>
-          <li>Lorem, ipsum.</li>
+          <h5 class="footer-list_titulo">Nuestra Compañia</h5>
+          <li>Politica de privacidad</li>
+          <li>terminos de uso</li>
+          <li>Accesibilidad</li>
         </ul>
         <ul class="footer-list footer-icons">
           <li class="bi bi-facebook"></li>
